@@ -106,12 +106,4 @@
     <ClInclude Include="..\luabind\yield_policy.hpp" />
     <ClInclude Include="..\pch.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Sources">
-      <UniqueIdentifier>{ca4ed806-a92a-460d-82e1-12c6d54eb9e2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Headers">
-      <UniqueIdentifier>{d77de1d4-f96c-4241-9861-1cb5acd23a2b}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
 </Project>

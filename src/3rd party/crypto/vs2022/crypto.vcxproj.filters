@@ -9,15 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="openssl">
-      <UniqueIdentifier>{9ed2ea7b-887b-4c29-9bce-26d5a1d026a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="openssl\include">
-      <UniqueIdentifier>{a4c71a21-fbf2-41f5-97e5-e42f64a1f57e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="openssl\src">
-      <UniqueIdentifier>{b150b5ce-88f2-4b85-8e4a-a46f41f2051c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\crypto.cpp">
