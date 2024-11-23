@@ -17,55 +17,46 @@
     <ClInclude Include="..\refact\Particle.h">
       <Filter>refact</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\BoxShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\BoxShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\IParticleShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\PointShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\PointShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\LineShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\LineShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\PlaneShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\ParticleShape.h">
-      <Filter>refact</Filter>
+    <ClInclude Include="..\refact\TriangleShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\ParticleShapeType.h">
-      <Filter>refact</Filter>
+    <ClInclude Include="..\refact\SphereShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\PlaneShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\CylinderShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\TriangleShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\ConeShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\SphereShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\RectangleShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\CylinderShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\BlobShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\ConeShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\refact\RectangleShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\refact\BlobShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\refact\DiscShapeController.h">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClInclude Include="..\refact\DiscShape.h">
+      <Filter>refact\Shapes</Filter>
     </ClInclude>
     <ClInclude Include="..\refact\stdafx.h">
       <Filter>refact</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\DefaultParticleShapeControllerFactory.h">
+    <ClInclude Include="..\refact\DefaultParticleShapeFactory.h">
       <Filter>refact</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\IParticleShapeControllerFactory.h">
+    <ClInclude Include="..\refact\IParticleShapeFactory.h">
       <Filter>refact</Filter>
     </ClInclude>
     <ClInclude Include="..\particle_core.h">
@@ -86,8 +77,14 @@
     <ClInclude Include="..\particle_effect.h">
       <Filter>done</Filter>
     </ClInclude>
+    <ClInclude Include="..\refact\ParticleShapeType.h">
+      <Filter>refact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refact\ParticleShapeBase.h">
+      <Filter>refact</Filter>
+    </ClInclude>
     <ClInclude Include="..\refact\IParticleAction.h">
-      <Filter>refact\Actions</Filter>
+      <Filter>refact</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -99,43 +96,43 @@
     <ClCompile Include="..\refact\ParticleVector.cpp">
       <Filter>refact</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\BoxShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\BoxShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\PointShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\PointShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\LineShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\LineShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\PlaneShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\PlaneShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\TriangleShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\TriangleShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\SphereShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\SphereShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\CylinderShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\CylinderShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\ConeShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\ConeShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\RectangleShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\RectangleShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\BlobShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\BlobShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\DiscShapeController.cpp">
-      <Filter>refact\ShapeControllers</Filter>
+    <ClCompile Include="..\refact\DiscShape.cpp">
+      <Filter>refact\Shapes</Filter>
     </ClCompile>
     <ClCompile Include="..\refact\stdafx.cpp">
       <Filter>refact</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\DefaultParticleShapeControllerFactory.cpp">
+    <ClCompile Include="..\refact\DefaultParticleShapeFactory.cpp">
       <Filter>refact</Filter>
     </ClCompile>
     <ClCompile Include="..\particle_core.cpp">
@@ -150,19 +147,19 @@
     <ClCompile Include="..\particle_effect.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="..\refact\ParticleShapeBase.cpp">
+      <Filter>refact</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="refact">
       <UniqueIdentifier>{cfc400f3-a6e5-4251-af4c-d856f2a5c653}</UniqueIdentifier>
     </Filter>
-    <Filter Include="refact\ShapeControllers">
-      <UniqueIdentifier>{e7fa79d5-3425-4bc6-bb86-9d2b9a333546}</UniqueIdentifier>
-    </Filter>
     <Filter Include="done">
       <UniqueIdentifier>{c4d117e9-ed12-47e8-b748-61177d8e0232}</UniqueIdentifier>
     </Filter>
-    <Filter Include="refact\Actions">
-      <UniqueIdentifier>{a3efa7dd-8293-4b08-9d6f-bcf896930ad7}</UniqueIdentifier>
+    <Filter Include="refact\Shapes">
+      <UniqueIdentifier>{e7fa79d5-3425-4bc6-bb86-9d2b9a333546}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
