@@ -30,7 +30,7 @@
 
 namespace PAPI
 {
-	class pVector : public Fvector
+	class pVector : public Fvector //+
 	{
 	public:
 		IC pVector(float ax, float ay, float az) { set(ax, ay, az); }
@@ -111,7 +111,7 @@ namespace PAPI
 		float x;
 	};
 
-	struct Particle
+	struct Particle //+
 	{
 		enum
 		{
@@ -132,12 +132,12 @@ namespace PAPI
 		Flags16 flags; // 2
 	}; // = 76
 
-	typedef void (* OnBirthParticleCB)(void* owner, u32 param, PAPI::Particle& P, u32 idx);
-	typedef void (* OnDeadParticleCB)(void* owner, u32 param, PAPI::Particle& P, u32 idx);
+	typedef void (* OnBirthParticleCB)(void* owner, u32 param, PAPI::Particle& P, u32 idx); //+
+	typedef void (* OnDeadParticleCB)(void* owner, u32 param, PAPI::Particle& P, u32 idx); //+
 
 	//////////////////////////////////////////////////////////////////////
 	// Type codes for domains
-	enum PDomainEnum
+	enum PDomainEnum //+
 	{
 		PDPoint = 0,
 		// Single point
@@ -166,7 +166,7 @@ namespace PAPI
 
 	//////////////////////////////////////////////////////////////////////
 	// Type codes for all actions
-	enum PActionEnum
+	enum PActionEnum //+
 	{
 		PAAvoidID,
 		// Avoid entering the domain of space.
@@ -237,7 +237,7 @@ namespace PAPI
 
 	struct ParticleAction;
 
-	class IParticleManager
+	class IParticleManager //+
 	{
 	public:
 		IParticleManager()

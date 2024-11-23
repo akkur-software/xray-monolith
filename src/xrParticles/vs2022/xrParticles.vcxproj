@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94A1C366-3D19-48E6-8170-4ADC2E70DF97}</ProjectGuid>
     <RootNamespace>xrParticles</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -101,7 +102,7 @@
       <AdditionalIncludeDirectories>$(xrSdkDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;XR_PARTICLES_EXPORTS;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <UndefinePreprocessorDefinitions>USE_LUAJIT_ONE</UndefinePreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <Optimization>MaxSpeed</Optimization>
@@ -113,6 +114,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <AdditionalOptions>/Ob3 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -272,6 +274,30 @@
     <ClInclude Include="..\particle_effect.h" />
     <ClInclude Include="..\particle_manager.h" />
     <ClInclude Include="..\psystem.h" />
+    <ClInclude Include="..\refact\BlobShapeController.h" />
+    <ClInclude Include="..\refact\BoxShapeController.h" />
+    <ClInclude Include="..\refact\ConeShapeController.h" />
+    <ClInclude Include="..\refact\CylinderShapeController.h" />
+    <ClInclude Include="..\refact\DefaultParticleShapeControllerFactory.h" />
+    <ClInclude Include="..\refact\DiscShapeController.h" />
+    <ClInclude Include="..\refact\IParticleAction.h" />
+    <ClInclude Include="..\refact\IParticleEngine.h" />
+    <ClInclude Include="..\refact\IParticleShapeController.h" />
+    <ClInclude Include="..\refact\IParticleShapeControllerFactory.h" />
+    <ClInclude Include="..\refact\LineShapeController.h" />
+    <ClInclude Include="..\refact\Particle.h" />
+    <ClInclude Include="..\refact\ParticleActionType.h" />
+    <ClInclude Include="..\refact\ParticleCallbacks.h" />
+    <ClInclude Include="..\refact\ParticleEffect.h" />
+    <ClInclude Include="..\refact\ParticleShape.h" />
+    <ClInclude Include="..\refact\ParticleShapeType.h" />
+    <ClInclude Include="..\refact\ParticleVector.h" />
+    <ClInclude Include="..\refact\PlaneShapeController.h" />
+    <ClInclude Include="..\refact\PointShapeController.h" />
+    <ClInclude Include="..\refact\RectangleShapeController.h" />
+    <ClInclude Include="..\refact\SphereShapeController.h" />
+    <ClInclude Include="..\refact\stdafx.h" />
+    <ClInclude Include="..\refact\TriangleShapeController.h" />
     <ClInclude Include="..\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +308,21 @@
     <ClCompile Include="..\particle_core.cpp" />
     <ClCompile Include="..\particle_effect.cpp" />
     <ClCompile Include="..\particle_manager.cpp" />
+    <ClCompile Include="..\refact\BlobShapeController.cpp" />
+    <ClCompile Include="..\refact\BoxShapeController.cpp" />
+    <ClCompile Include="..\refact\ConeShapeController.cpp" />
+    <ClCompile Include="..\refact\CylinderShapeController.cpp" />
+    <ClCompile Include="..\refact\DefaultParticleShapeControllerFactory.cpp" />
+    <ClCompile Include="..\refact\DiscShapeController.cpp" />
+    <ClCompile Include="..\refact\LineShapeController.cpp" />
+    <ClCompile Include="..\refact\ParticleEffect.cpp" />
+    <ClCompile Include="..\refact\ParticleVector.cpp" />
+    <ClCompile Include="..\refact\PlaneShapeController.cpp" />
+    <ClCompile Include="..\refact\PointShapeController.cpp" />
+    <ClCompile Include="..\refact\RectangleShapeController.cpp" />
+    <ClCompile Include="..\refact\SphereShapeController.cpp" />
+    <ClCompile Include="..\refact\stdafx.cpp" />
+    <ClCompile Include="..\refact\TriangleShapeController.cpp" />
     <ClCompile Include="..\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='VerifiedDX11|x64'">Create</PrecompiledHeader>
