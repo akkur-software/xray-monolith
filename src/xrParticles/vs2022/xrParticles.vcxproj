@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94A1C366-3D19-48E6-8170-4ADC2E70DF97}</ProjectGuid>
     <RootNamespace>xrParticles</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -101,7 +102,7 @@
       <AdditionalIncludeDirectories>$(xrSdkDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;XR_PARTICLES_EXPORTS;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <UndefinePreprocessorDefinitions>USE_LUAJIT_ONE</UndefinePreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <Optimization>MaxSpeed</Optimization>
@@ -113,6 +114,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <AdditionalOptions>/Ob3 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -272,6 +274,29 @@
     <ClInclude Include="..\particle_effect.h" />
     <ClInclude Include="..\particle_manager.h" />
     <ClInclude Include="..\psystem.h" />
+    <ClInclude Include="..\refact\BlobShape.h" />
+    <ClInclude Include="..\refact\BoxShape.h" />
+    <ClInclude Include="..\refact\ConeShape.h" />
+    <ClInclude Include="..\refact\CylinderShape.h" />
+    <ClInclude Include="..\refact\DefaultParticleShapeFactory.h" />
+    <ClInclude Include="..\refact\DiscShape.h" />
+    <ClInclude Include="..\refact\IParticleAction.h" />
+    <ClInclude Include="..\refact\IParticleEngine.h" />
+    <ClInclude Include="..\refact\IParticleShapeFactory.h" />
+    <ClInclude Include="..\refact\LineShape.h" />
+    <ClInclude Include="..\refact\Particle.h" />
+    <ClInclude Include="..\refact\ParticleActionType.h" />
+    <ClInclude Include="..\refact\ParticleCallbacks.h" />
+    <ClInclude Include="..\refact\ParticleEffect.h" />
+    <ClInclude Include="..\refact\ParticleShapeBase.h" />
+    <ClInclude Include="..\refact\ParticleShapeType.h" />
+    <ClInclude Include="..\refact\ParticleVector.h" />
+    <ClInclude Include="..\refact\PlaneShape.h" />
+    <ClInclude Include="..\refact\PointShape.h" />
+    <ClInclude Include="..\refact\RectangleShape.h" />
+    <ClInclude Include="..\refact\SphereShape.h" />
+    <ClInclude Include="..\refact\stdafx.h" />
+    <ClInclude Include="..\refact\TriangleShape.h" />
     <ClInclude Include="..\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +307,22 @@
     <ClCompile Include="..\particle_core.cpp" />
     <ClCompile Include="..\particle_effect.cpp" />
     <ClCompile Include="..\particle_manager.cpp" />
+    <ClCompile Include="..\refact\BlobShape.cpp" />
+    <ClCompile Include="..\refact\BoxShape.cpp" />
+    <ClCompile Include="..\refact\ConeShape.cpp" />
+    <ClCompile Include="..\refact\CylinderShape.cpp" />
+    <ClCompile Include="..\refact\DefaultParticleShapeFactory.cpp" />
+    <ClCompile Include="..\refact\DiscShape.cpp" />
+    <ClCompile Include="..\refact\LineShape.cpp" />
+    <ClCompile Include="..\refact\ParticleEffect.cpp" />
+    <ClCompile Include="..\refact\ParticleShapeBase.cpp" />
+    <ClCompile Include="..\refact\ParticleVector.cpp" />
+    <ClCompile Include="..\refact\PlaneShape.cpp" />
+    <ClCompile Include="..\refact\PointShape.cpp" />
+    <ClCompile Include="..\refact\RectangleShape.cpp" />
+    <ClCompile Include="..\refact\SphereShape.cpp" />
+    <ClCompile Include="..\refact\stdafx.cpp" />
+    <ClCompile Include="..\refact\TriangleShape.cpp" />
     <ClCompile Include="..\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='VerifiedDX11|x64'">Create</PrecompiledHeader>
