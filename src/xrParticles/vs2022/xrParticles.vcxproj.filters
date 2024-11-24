@@ -178,7 +178,9 @@
     <ClCompile Include="..\refact\CopyVertexAction.cpp">
       <Filter>refact\Actions</Filter>
     </ClCompile>
-    <ClCompile Include="..\refact\DampingAction.cpp" />
+    <ClCompile Include="..\refact\DampingAction.cpp">
+      <Filter>refact\Actions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="refact">
