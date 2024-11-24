@@ -28,7 +28,7 @@ enum class ParticleActionType
 	/// <summary>
 	/// Set the secondary position from current position
 	/// </summary>
-	CopyVertexB,
+	CopyVertex,
 
 	/// <summary>
 	/// Dampen particle velocities.

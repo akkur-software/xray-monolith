@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\noise.h" />
     <ClInclude Include="..\particle_actions.h" />
     <ClInclude Include="..\particle_actions_collection.h" />
     <ClInclude Include="..\particle_manager.h" />
@@ -83,12 +82,26 @@
     <ClInclude Include="..\refact\ParticleShapeBase.h">
       <Filter>refact</Filter>
     </ClInclude>
-    <ClInclude Include="..\refact\IParticleAction.h">
+    <ClInclude Include="..\refact\ParticleActionBase.h">
       <Filter>refact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\noise.h">
+      <Filter>done</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refact\AvoidAction.h">
+      <Filter>refact\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refact\BounceAction.h">
+      <Filter>refact\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refact\CopyVertexAction.h">
+      <Filter>refact\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refact\DampingAction.h">
+      <Filter>refact\Actions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\noise.cpp" />
     <ClCompile Include="..\particle_actions.cpp" />
     <ClCompile Include="..\particle_actions_collection.cpp" />
     <ClCompile Include="..\particle_actions_collection_io.cpp" />
@@ -150,6 +163,22 @@
     <ClCompile Include="..\refact\ParticleShapeBase.cpp">
       <Filter>refact</Filter>
     </ClCompile>
+    <ClCompile Include="..\noise.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refact\ParticleActionBase.cpp">
+      <Filter>refact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refact\AvoidAction.cpp">
+      <Filter>refact\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refact\BounceAction.cpp">
+      <Filter>refact\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refact\CopyVertexAction.cpp">
+      <Filter>refact\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refact\DampingAction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="refact">
@@ -160,6 +189,9 @@
     </Filter>
     <Filter Include="refact\Shapes">
       <UniqueIdentifier>{e7fa79d5-3425-4bc6-bb86-9d2b9a333546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="refact\Actions">
+      <UniqueIdentifier>{38f607fc-3cad-430c-b749-394a46826be3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

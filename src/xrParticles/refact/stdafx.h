@@ -38,3 +38,28 @@ constexpr float ONEOVERSQRT2PI = (1.f / SQRT2PI);
 /// <param name="sigma"></param>
 /// <returns></returns>
 float NRand(float sigma);
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="vec"></param>
+/// <returns></returns>
+float noise3(const Fvector& vec);
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="v"></param>
+/// <param name="freq"></param>
+/// <param name="octaves"></param>
+/// <returns></returns>
+float fractalsum3(const Fvector& v, float freq, int octaves);
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="v"></param>
+/// <param name="freq"></param>
+/// <param name="octaves"></param>
+/// <returns></returns>
+float turbulence3(const Fvector& v, float freq, int octaves);

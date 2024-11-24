@@ -58,3 +58,17 @@ float ParticleShapeBase::InnerRadiusSquare() const
 {
 	return m_innerRadiusSquare;
 }
+
+constexpr size_t ParticleShapeBase::SizeOf()
+{
+	return 
+		sizeof(m_type) +
+		sizeof(m_point1) + 
+		sizeof(m_point2) + 
+		sizeof(m_u) + 
+		sizeof(m_v) + 
+		sizeof(m_outerRadius) + 
+		sizeof(m_innerRadius) + 
+		sizeof(m_outerRadiusSquare) + 
+		sizeof(m_innerRadiusSquare);
+}

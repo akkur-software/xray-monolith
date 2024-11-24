@@ -5,7 +5,7 @@
 /// <summary>
 /// The particle shape
 /// </summary>
-struct ParticleShapeBase
+class ParticleShapeBase
 {
 public:
 	virtual ~ParticleShapeBase() = default;
@@ -58,6 +58,12 @@ public:
 	/// Used for fast Within test of spheres, and for mag. of u and v vectors for plane.
 	/// </summary>
 	float InnerRadiusSquare() const;
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <returns></returns>
+	static constexpr size_t SizeOf();
 
 public:
 	/// <summary>
